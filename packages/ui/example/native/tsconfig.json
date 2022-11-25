@@ -12,6 +12,7 @@
       "dom",
       "esnext"
     ],
+    "allowJs": true,
     "moduleResolution": "node",
     "noEmit": true,
     "skipLibCheck": true,
