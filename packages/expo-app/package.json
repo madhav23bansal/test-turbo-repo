@@ -1,0 +1,10 @@
+{
+  "name": "expo-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "madhav23bansal",
+  "license": "MIT",
+  "dependencies": {
+    "ui": "*"
+  }
+}

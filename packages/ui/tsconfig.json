@@ -1,0 +1,15 @@
+{
+  "extends": "tsconfig/react-native-library",
+  "include": [
+    ".",
+    "../../apps/native"
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "strict": true
+  }
+}
