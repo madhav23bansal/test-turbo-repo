@@ -1,16 +1,18 @@
 {
   "name": "ui",
   "version": "0.0.0",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "lib/commonjs/index",
+  "types": "lib/typescript/src/index.d.ts",
+  "module": "lib/module/index",
+  "react-native": "src/index",
+  "source": "src/index",
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
-    "clean": "rm -rf dist"
+    "dev": "bob build"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
     "@types/react-native": "^0.69.15",
+    "react-native-builder-bob": "^0.20.1",
     "tsconfig": "*",
     "tsup": "^6.0.1",
     "typescript": "^4.7.4"
@@ -18,5 +20,18 @@
   "dependencies": {
     "react": "^18.1.0",
     "react-native": "^0.70.3"
-  }
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "files": [
+    "lib/",
+    "src/"
+  ]
 }
